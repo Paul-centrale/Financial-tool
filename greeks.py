@@ -64,6 +64,7 @@ plt.ylabel('Call Price / Delta')
 plt.title('ATM Call Option Price and Delta over 2 Months')
 plt.legend()
 plt.grid(True)
+plt.savefig('call_option_price_and_delta.pdf')  # Save the plot as a PDF
 plt.show()
 
 # Print the historical data with delta
