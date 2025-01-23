@@ -4,6 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import norm
 
+
+
 # Get the S&P 500 stock data
 sp500 = yf.Ticker("^GSPC")
 
