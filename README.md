@@ -36,14 +36,3 @@ You can install the dependencies using pip:
 ```sh
 pip install numpy scipy matplotlib pandas yfinance
 ```
-
-### .gitignore
-
-The `.gitignore` file is configured to exclude unnecessary files and directories from version control, such as:
-- `.DS_Store`
-- `.ipynb_checkpoints`
-- `.venv`
-- `Bouzoubaa_ntoes.pages`
-- `Untitled.ipynb`
-- `greek.py`
-- `options_pricers.py`
