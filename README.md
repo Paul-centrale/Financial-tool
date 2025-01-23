@@ -18,8 +18,9 @@ This project includes several tools for pricing options and calculating option G
    - Run the script to fetch historical S&P 500 data, calculate deltas, and visualize call option prices and deltas over a 2-month period.
 
 
-3. **Moving variables for BS.py**:
+3. **Moving variables for BS and greeks.py**:
     - This is a jupyter notebook that allow to move the sliders for variables and feel the movements in the pricings of the put and call options.
+    - A section for greek with the delta of a call option, and its evolution with moving volatility, strike price etc...
 
 ### Dependencies
 
@@ -45,3 +46,6 @@ pip install numpy scipy matplotlib pandas yfinance
 
 #### Butterfly Spread Price, Payoff, and Profit
 ![Butterfly Spread Price, Payoff, and Profit](butterfly_spread_price_payoff_profit.png)
+
+#### Delta of a call
+![Delta of a call](delta_call.png)
