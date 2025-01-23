@@ -40,10 +40,10 @@ pip install numpy scipy matplotlib pandas yfinance
 ### Plots
 
 #### Call Option Price and Payoff
-![Call Option Price and Payoff](call_option_price_and_payoff.pdf)
+![Call Option Price and Payoff](call_option_price_and_payoff.png)
 
 #### Put Option Price and Payoff
-![Put Option Price and Payoff](put_option_price_and_payoff.pdf)
+![Put Option Price and Payoff](put_option_price_and_payoff.png)
 
 #### Butterfly Spread Price, Payoff, and Profit
-![Butterfly Spread Price, Payoff, and Profit](butterfly_spread_price_payoff_profit.pdf)
+![Butterfly Spread Price, Payoff, and Profit](butterfly_spread_price_payoff_profit.png)

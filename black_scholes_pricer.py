@@ -68,7 +68,7 @@ plt.ylabel('Price / Profit')
 plt.title('Call Option Price and Payoff')
 plt.legend()
 plt.grid(True)
-plt.savefig('call_option_price_and_payoff.pdf')  # Save the plot as a PDF
+plt.savefig('call_option_price_and_payoff.png')  # Save the plot as a png
 plt.show()
 
 # Plotting put option price, payoff, and profit
@@ -81,7 +81,7 @@ plt.ylabel('Price / Profit')
 plt.title('Put Option Price and Payoff')
 plt.legend()
 plt.grid(True)
-plt.savefig('put_option_price_and_payoff.pdf')  # Save the plot as a PDF
+plt.savefig('put_option_price_and_payoff.png')  # Save the plot as a png
 plt.show()
 
 
@@ -131,7 +131,7 @@ plt.ylabel('Price / Profit')
 plt.title('Butterfly Spread Price, Payoff, and Profit')
 plt.legend()
 plt.grid(True)
-plt.savefig('butterfly_spread_price_payoff_profit.pdf')  # Save the plot as a PDF
+plt.savefig('butterfly_spread_price_payoff_profit.png')  # Save the plot as a png
 plt.show()
 
 
