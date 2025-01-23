@@ -11,17 +11,15 @@ This project includes several tools for pricing options and calculating option G
 
 1. **black_scholes_pricer.py**:
    - Run the script to calculate and visualize call and put option prices, payoffs, and profit patterns.
-   - Example usage:
-     ```sh
-     python black_scholes_pricer.py
-     ```
+   - There is also the payoff and profit of a butterfly spread with call options
+
 
 2. **greeks.py**:
    - Run the script to fetch historical S&P 500 data, calculate deltas, and visualize call option prices and deltas over a 2-month period.
-   - Example usage:
-     ```sh
-     python greeks.py
-     ```
+
+
+3. **Moving variables for BS.py**:
+    - This is a jupyter notebook that allow to move the sliders for variables and feel the movements in the pricings of the put and call options.
 
 ### Dependencies
 
