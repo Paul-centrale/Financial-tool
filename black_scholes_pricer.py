@@ -25,12 +25,17 @@ def butterfly_spread_call(S, K1, K2, K3, T, r, sigma):
     call_price3 = black_scholes_call(S, K3, T, r, sigma)
     return [call_price1,call_price2,call_price3]
 
+
+
 # Example parameters
 S = np.linspace(50, 150, 100)  # Spot price
 K = 100  # Strike price
 T = 1  # Time to maturity in years
 r = 0.05  # Risk-free interest rate
 sigma = 0.2  # Volatility
+
+
+# Calculations:
 
 # Calculate call prices
 call_prices = black_scholes_call(S, K, T, r, sigma)
@@ -49,6 +54,9 @@ call_profit = payoff_call - call_prices
 
 # Calculate the profit pattern for the put option
 put_profit = payoff_put - put_prices
+
+
+# Plots:
 
 # Plotting call option price, payoff, and profit
 plt.figure(figsize=(10, 6))
@@ -74,6 +82,9 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
+
+
+
 #Pricing a butterfly spread
 
 # Example parameters
@@ -85,10 +96,12 @@ T = 1  # Time to maturity in years
 r = 0.05  # Risk-free interest rate
 sigma = 0.2  # Volatility
 
+
+
+
 # Calculate butterfly spread prices
 butterfly_calls = butterfly_spread_call(S, K1, K2, K3, T, r, sigma)
 butterfly_prices = butterfly_calls[0] - 2 * butterfly_calls[1] + butterfly_calls[2]
-
 
 # Adjust the spot price to 100 for butterfly spread pricing
 S=100
@@ -98,14 +111,11 @@ butterfly_calls_at_100 = butterfly_spread_call(S, K1, K2, K3, T, r, sigma)
 
 butterfly_prices_at_100 = np.full(100,butterfly_calls_at_100[0] - 2 * butterfly_calls_at_100[1] + butterfly_calls_at_100[2])
 
-
-
 S = np.linspace(50, 150, 100)
 # Calculate the profit pattern for the butterfly spread
 butterfly_payoff = np.maximum(S - K1, 0) - 2 * np.maximum(S - K2, 0) + np.maximum(S - K3, 0)
-
-
 butterfly_profit = butterfly_payoff - butterfly_prices_at_100
+
 
 
 
@@ -144,3 +154,5 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
+
+# Straddle spread
